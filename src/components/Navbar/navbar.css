@@ -1,0 +1,181 @@
+.navbar-sta {
+  background-color: rgba(0, 0, 0, 0.948);
+  width: 100vw;
+  min-height: 85px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 0;
+  max-height: 90px;  
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.brand-logo {
+  vertical-align: middle;
+  width: 300px;
+  animation: color-back 4s forwards;
+  margin: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+
+.navbar-item {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 24pt;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.navbar-item button {
+  background-color: rgba(238, 238, 238, 0);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar-item button:hover {
+  color: rgb(123, 167, 248);
+  background-color: rgba(175, 202, 253, 0.421);
+  border-radius: 8pt;
+}
+.navbar-item button:active {
+  color: rgba(123, 167, 248, 0.76);
+  background-color: rgba(175, 202, 253, 0);
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  vertical-align: middle;
+  height: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.navbar-button {
+  display: none;
+
+}
+
+.tolbar-menu {
+  background-color: rgba(0, 0, 0, 0.986);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 85px;
+  right: 0;
+  padding: 0;
+  border-top: 2px solid rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(255, 255, 255);
+  height: 10vh;
+  opacity: 0.99;
+  position: fixed;
+  z-index: 100;
+  min-height: 100%;
+  animation: sccorrimento 0.5s forwards;
+}
+
+.tolbar-menu li {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: auto;
+  margin-top: 10px;
+  padding-right: 5%;
+  font-weight: bold;
+}
+
+.tolbar-menu a {
+  border-bottom: none;
+  color: white;
+  text-decoration: none;
+}
+
+.toggle-button{
+  height: 60px;
+  width: 60px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  color: white;
+}
+
+.toggle-button svg{
+  transform: scale(1.8);
+  margin:auto
+}
+
+.tolbar-menu button:hover {
+  border-bottom: none;
+  color: rgb(28, 62, 255);
+}
+
+.tolbar-menu button:active {
+  border-bottom: none;
+  color: rgb(28, 62, 255);
+  font-weight: bold;
+}
+
+@keyframes color-back {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes sccorrimento {
+  0% {
+    left: 100vw;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    left: 0vw;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+  .brand-logo{
+    width: 180px;
+  }
+
+  .navbar-sta{
+    position: fixed;
+    margin: auto;
+    width: 100vw;
+    display: flex;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.567);
+  }
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-button {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    height: 60px;
+    width: 60px;
+    margin-right: 20px;
+    margin-top: 15px;
+
+  }
+  /* .navbar-links button{
+    display: none;
+  } */
+}

@@ -1,0 +1,140 @@
+.page-container{
+    padding: 10px;
+    background-image: url('../../assets/imgs/background.JPEG');
+    height: 120vh;
+    background-size: 50vw;
+    width: 50vw;
+    margin:auto
+}
+
+.saluto{
+    text-align: start;
+    position: absolute;
+    top:120px;
+    left: 10vw;
+    margin-left: 0;
+    font-weight: bold;
+    font-size: 105pt;
+}
+
+.section-title{
+    text-align: start;
+    margin-left: 30%;
+    margin-top: 100px;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.IAM{
+    color: rgb(37, 77, 255);
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.motion-text{
+    position: absolute;
+    top: 300px;
+    left: 10%;
+    color: rgba(255, 255, 255, 0.311);
+    max-width: 100vw;
+    display: inline-flex;
+    justify-content: flex-start;
+    font-size: 2vw;
+}
+
+.higlted-text{
+    color: rgb(0, 89, 255);
+}
+
+.bio{
+    color: white;
+    text-align: start;
+}
+
+.bio-container{
+    position: absolute;
+    left: 5%;
+    top:90vh;
+    display: flex;
+}
+
+@media only screen and (max-width: 1250px) {
+
+    .page-container{
+        margin-top: 50px;
+        max-height: 500px;
+        background-size: 70vw;
+    }
+
+    .saluto{
+        top:150px;
+        left: 10vw;
+        font-size: 10vw;
+    }
+
+    .bio-container{
+        position: absolute;
+        left: 10vw;
+        top:90vh;
+        width: 80vw;
+        display: flex;
+    }
+    
+}  
+
+@media only screen and (max-width: 900px) {
+
+    .page-container{
+        margin-top: 50px;
+    }
+    .IAM{
+        font-size: 18pt;
+    }
+    .motion-text{
+        top: 500px;
+        left: 20vw;
+        font-size: 18pt;
+    }
+    .bio-container{
+        position: absolute;
+        left: 5vw;
+        top:540px;
+        width: 80vw;
+        display: flex;
+    }
+    
+}
+
+@media only screen and (max-width: 650px) {
+
+    .page-container{
+        margin-top: 150px;
+        height: 150vh;
+        max-height: 350px;
+    }
+
+    .saluto{
+        top:430px;
+        left:10vw;
+    }
+
+    .IAM{
+        font-size: 18pt;
+    }
+    .motion-text{
+        top: 500px;
+        left: 10vw;
+        font-size: 18pt;
+    }
+    .bio-container{
+        position: absolute;
+        height: 100px;
+        top:560px;
+        left: 5vw;
+        width: 80vw;
+        display: flex;
+    }
+    
+
+}  

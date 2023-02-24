@@ -1,0 +1,60 @@
+.skills-page{
+    position: relative;
+    top:100px;
+    padding: 10px;
+    background-color: rgb(1,1,1);
+    background-size: 100vw
+}
+.section-title{
+    margin-top: 100px;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    
+}
+
+.scroll-container{
+    width: 90vw;
+    margin: auto;
+    margin-top: 100px;
+    overflow: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;  /* mozilla */
+}
+::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome browsers */
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+.scroll{
+    width: 40vw;
+    margin: auto;
+    overflow: hidden;
+}
+
+.arrow-button{
+    background-color: rgba(127, 255, 212, 0);
+    color: white;
+    border: none;
+}
+.arrow-button:hover{
+
+    color: rgb(0, 72, 255);
+}
+.arrow-button:disabled{
+
+    color: rgba(255, 255, 255, 0.249);
+}
+
+@media only screen and (max-width: 600px) {
+    .scroll-container{
+        width: 100vw;
+    }
+
+    .arrow-button{
+        display: none;
+    }
+}
