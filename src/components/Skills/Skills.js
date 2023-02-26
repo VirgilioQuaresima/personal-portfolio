@@ -63,7 +63,7 @@ function Skills() {
                     
                     {skills_ls.map((row,index)=>{
                         return(
-                            <Card name={row.name} percentage={row.percentage} />
+                            <Card key={index} name={row.name} percentage={row.percentage} />
                         )
                     })}
 

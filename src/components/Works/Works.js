@@ -81,7 +81,7 @@ function Works() {
                 <ScrollMenu noPolyfill style={{ width: '100vw', marginLeft: '10px', marginRight: '10px' }} LeftArrow={LeftArrow} RightArrow={RightArrow}>
 
                     {works_ls.map((row, index) => {
-                        return (<Card work={row} click={()=>setf(row.name)}/>)
+                        return (<Card key={index} work={row} click={()=>setf(row.name)}/>)
                     })}
 
                 </ScrollMenu>
