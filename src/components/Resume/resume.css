@@ -1,0 +1,94 @@
+.resume-page {
+  position: relative;
+  top: 100px;
+  padding: 10px;
+  background-color: rgb(1, 1, 1);
+  background-size: 100vw;
+}
+.section-title {
+  margin-top: 100px;
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.resume-container {
+  border: solid 1px;
+  border-color: rgba(9, 132, 255, 0.357);
+  border-radius: 8px;
+  width: 80vw;
+  margin: auto;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.resume-container:hover {
+    border: solid 2px;
+    border-color: rgb(9, 132, 255);
+  }
+
+.resume{
+    text-align: start;
+    color: aliceblue;
+    font-size: 14pt;
+}
+
+.resume span{
+    color: rgb(9, 132, 255);;
+}
+
+
+.lista-known{
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.lista-known li{
+    text-align: start;
+}
+
+.lista-known li:hover{
+    color:rgb(9, 132, 255);
+    transform: scale(1.1);
+}
+
+.data-container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.data-container p{
+    text-align: start;
+    color: white;
+}
+
+.data-container p span{
+    color:rgb(9, 132, 255); ;
+}
+
+.download-button:hover{
+    transform: scale(1.1);
+}
+.download-button{
+    background-color:  rgba(9, 132, 255, 0);
+    border-color:rgba(9, 132, 255, 0.417);
+    color:rgb(9, 132, 255);
+    border-radius: 6pt;
+    margin-top: 0px;
+    width: 150px;
+}
+.download-button:active{
+    color:rgba(9, 132, 255, 0.417);
+    border-color: rgb(9, 132, 255);
+}
+
+@media only screen and (max-width: 800px) {
+
+    
+.data-container{
+    grid-template-columns: auto;
+}
+}

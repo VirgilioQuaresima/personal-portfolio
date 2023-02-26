@@ -28,11 +28,8 @@ function RightArrow() {
 
 function Card(props) {
     return (
-        <div className='card' onClick={props.click}>
-            <h1>{props.work.name}</h1>
+        <div className='card'>
             <img src={props.work.picture} alt='' />
-            <p>{props.work.role}</p>
-            <p style={{textAlign:"center"}}>{props.work.startDate} - {props.work.endDate}</p>
         </div>
     )
 }
@@ -45,51 +42,22 @@ const works_ls = [
         role:'dev',
         startDate:'04/22',
         endDate:'today'
-    },
-    {
-        name: 'Jarvit',
-        picture: 'https://www.jarvit.com/wp-content/uploads/2021/01/logo.png',
-        role:'dev',
-        startDate:'10/21',
-        endDate:'03/22'
-    },
-    {
-        name: 'STARQ Lab',
-        picture: logo,
-        role:'dev',
-        startDate:'03/22',
-        endDate:'today'
-    },
+    }
 ]
 
 function Works() {
-    const dictionary={
-        'CodeRTD':'tante belle cose',
-        'Jarvit':'un cazzo'
-    }
-    const [actual,setActual] = useState(dictionary['CodeRTD'])
 
-    function setf(e){
-        console.log(e)
-        setActual(dictionary[e])
-    }
+
 
     return (
         < div className='works-page'>
             <h1 className="section-title">Works</h1>
             <div className='schede'>
                 <ScrollMenu noPolyfill style={{ width: '100vw', marginLeft: '10px', marginRight: '10px' }} LeftArrow={LeftArrow} RightArrow={RightArrow}>
-
                     {works_ls.map((row, index) => {
-                        return (<Card key={index} work={row} click={()=>setf(row.name)}/>)
+                        return (<Card key={index} work={row} />)
                     })}
-
                 </ScrollMenu>
-                <div>
-                    <p>
-                        Descrizione su quanto fatto a {actual}
-                    </p>
-                </div>
             </div>
         </div>)
 }

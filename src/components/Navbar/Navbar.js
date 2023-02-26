@@ -5,6 +5,30 @@ import logo from '../../assets/imgs/2.png'
 import { useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import React from 'react'
+
+function Menu(props){
+    return(
+    <div className={props.className} hidden={props.hidden}>
+        <Nav.Item className='navbar-item'>
+            <button onClick={() => props.ScrollTo('home')}>Home</button>
+        </Nav.Item>
+        <Nav.Item className='navbar-item'>
+            <button onClick={() => props.ScrollTo('resume')}>Resume</button>
+        </Nav.Item>
+        <Nav.Item className='navbar-item'>
+            <button onClick={() => props.ScrollTo('skills')}>Skills</button>
+        </Nav.Item>
+        <Nav.Item className='navbar-item'>
+            <button onClick={() => props.ScrollTo('works')}>Works</button>
+        </Nav.Item>
+        <Nav.Item className='navbar-item'>
+            <button onClick={() => props.ScrollTo('contact')}>Contact</button>
+        </Nav.Item>
+    </div>
+    )
+}
+
+
 function NavBar() {
     const [showMenu, setShowMenu] = useState(true)
 
@@ -30,39 +54,12 @@ function NavBar() {
             </Navbar.Brand>
             <div className='navbar-button'>
                 <button className='toggle-button' onClick={showTolbarMenu}><MenuIcon style={{
- 
+
                 }} /></button>
             </div>
-            <div className='navbar-links'>
-                <Nav.Item className='navbar-item'>
-                    <button onClick={() => ScrollTo('about')}>About</button>
-                </Nav.Item>
-                <Nav.Item className='navbar-item'>
-                    <button onClick={() => ScrollTo('skills')}>Skills</button>
-                </Nav.Item>
-                <Nav.Item className='navbar-item'>
-                    <button onClick={() => ScrollTo('works')}>Works</button>
-                </Nav.Item>
-                <Nav.Item className='navbar-item'>
-                    <button onClick={() => ScrollTo('contact')}>Contact</button>
-                </Nav.Item>
-            </div>
+            <Menu className='navbar-links' ScrollTo={ScrollTo}/>
+            <Menu className='tolbar-menu' hidden={showMenu} ScrollTo={ScrollTo}/>
         </div>
-        <div className='tolbar-menu' hidden={showMenu}>
-            <Nav.Item className='navbar-item'>
-                <button onClick={() => ScrollTo('about')}>About</button>
-            </Nav.Item>
-            <Nav.Item className='navbar-item'>
-                <button onClick={() => ScrollTo('skills')}>Skills</button>
-            </Nav.Item>
-            <Nav.Item className='navbar-item'>
-                <button onClick={() => ScrollTo('works')}>Works</button>
-            </Nav.Item>
-            <Nav.Item className='navbar-item'>
-                <button onClick={() => ScrollTo('contact')}>Contact</button>
-            </Nav.Item>
-        </div>
-
         <br />
 
     </>)

@@ -17,29 +17,20 @@
 }
 
 .card{
-    background-color: rgba(255, 255, 255, 0.559);
-    color: black;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
     width: 300px;
-    height: 400px;
+    height: 200px;
     padding: 20px;
     margin-left: 10px;
     margin-right: 10px;
-    cursor: pointer;
-
-}
-
-.card:hover{
-    background-color: rgb(255, 255, 255);
-}
-.card:active{
-    background-color: rgb(255, 255, 255);
 }
 
 .card h1{
-    color:black;
+    color:rgb(255, 255, 255);
     font-weight: bold;
 }
 
