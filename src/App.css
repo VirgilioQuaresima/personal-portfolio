@@ -111,7 +111,7 @@ body {
 @media only screen and (max-width: 900px) {
   .contact-bar{
     position: fixed;
-    top: 80vh;
+    top: 76vh;
     left:10%;
     margin: auto;
     width: 80%;

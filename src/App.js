@@ -23,6 +23,7 @@ function ContactBar() {
     <div class="contact-bar">
       <p>e: virgilioquaresima.dev@gmail.com</p>
       <p>m: +39 388 1705952</p>
+      <p>P.IVA: 03860180797</p>
     </div>
   )
 }
