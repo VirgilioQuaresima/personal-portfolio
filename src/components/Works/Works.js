@@ -3,8 +3,7 @@ import React from 'react'
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
-import { useState } from 'react';
-import logo from '../../assets/imgs/2.png'
+
 function LeftArrow() {
     const { isFirstItemVisible, scrollPrev } =
         React.useContext(VisibilityContext);
