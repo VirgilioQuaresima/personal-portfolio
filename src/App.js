@@ -12,8 +12,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import Resume from './components/Resume/Resume';
 import { Animator, MoveIn, Fade, ScrollContainer, ScrollPage, batch, FadeIn, ZoomIn, ZoomOut, } from 'react-scroll-motion'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { refType } from '@mui/utils';
-import { Analytics } from '@vercel/analytics/react';
  
 const MoveFromSx = batch(MoveIn(-1000, 0), FadeIn())
 const MoveFromDx = batch(MoveIn(1000, 0), FadeIn())
@@ -63,7 +61,7 @@ function App() {
       </div>
       <ContactBar />
       <IconsBar />
-      <Analytics/>
+
     </div>
   );
 }
