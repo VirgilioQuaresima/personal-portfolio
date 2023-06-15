@@ -1,4 +1,4 @@
-// import { Analytics } from '@vercel/analytics/react';
+
 import './App.css';
 import React from 'react'
 import NavBar from './components/Navbar/Navbar';
@@ -55,7 +55,6 @@ function App() {
       <div id="contact" className='page'>
         <Contact />
       </div>
-      {/* <Analytics /> */}
       <ContactBar />
       <IconsBar />
 
