@@ -5,6 +5,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+
 function LeftArrow() {
     const { isFirstItemVisible, scrollPrev } =
         React.useContext(VisibilityContext);

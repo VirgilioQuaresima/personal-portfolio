@@ -1,3 +1,4 @@
+// import { Analytics } from '@vercel/analytics/react';
 import './App.css';
 import React from 'react'
 import NavBar from './components/Navbar/Navbar';
@@ -10,15 +11,9 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GoogleIcon from '@mui/icons-material/Google';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Resume from './components/Resume/Resume';
-import { Animator, MoveIn, Fade, ScrollContainer, ScrollPage, batch, FadeIn, ZoomIn, ZoomOut, } from 'react-scroll-motion'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Analytics } from '@vercel/analytics/react';
+
  
-const MoveFromSx = batch(MoveIn(-1000, 0), FadeIn())
-const MoveFromDx = batch(MoveIn(1000, 0), FadeIn())
-const MoveFromTop = batch(MoveIn(0, -1000), FadeIn())
-const MoveFromBtmWithZoom = batch(MoveIn(0, 1000), FadeIn(), ZoomIn())
-const MoveFromBtm = batch(MoveIn(0, 1000), FadeIn())
 function ContactBar() {
   return (
     <div class="contact-bar">
@@ -60,9 +55,10 @@ function App() {
       <div id="contact" className='page'>
         <Contact />
       </div>
+      {/* <Analytics /> */}
       <ContactBar />
       <IconsBar />
-      <Analytics />
+
     </div>
   );
 }
